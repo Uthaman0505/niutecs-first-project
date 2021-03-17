@@ -27,13 +27,7 @@
   background-image: linear-gradient(to right, white, DodgerBlue);
 }
 
-.inner-header {
-  width: 1000px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  background-color: red;
-}
+
 
 .logo_container {
   height: 100%;
@@ -53,6 +47,8 @@
   width: 50px;
   height: 20px;
 }
+
+/* ----------------------------------- */
 
 ol {
   list-style-type: none;
