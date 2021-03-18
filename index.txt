@@ -58,3 +58,37 @@
         </div>
       </form>
     </div> -->
+
+
+
+    <div class="row">
+          <div class="text-left">
+            <button
+              class="btn btn-primary btn-lg text-left"
+              style="
+                background-color: #0081d5;
+                font-size: 10px;
+                margin-left: 300px;
+              "
+              type="submit"
+            >
+              Preview
+            </button>
+          </div>
+            <div class="btn-group" role="group" aria-label="...">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                style="background-color: #ff0404; font-size: 10px"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                style="background-color: #12d500; font-size: 10px"
+              >
+                Save
+              </button>
+            </div>
+        </div>

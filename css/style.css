@@ -11,12 +11,12 @@
     url("../fonts/glyphicons-halflings-regular.svg") format("svg");
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-}
+} */
 
 /* HEADER CSS */
 
@@ -65,3 +65,21 @@
 
 
 /* ------------------------------------------------- */
+
+/* Button CSS */
+
+/* .btn:focus {
+    outline: none !important;
+    
+  } */
+
+  .buttons{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .button-1{
+    margin-right: 142px;
+  }
+
+/* ------------------------------ */
