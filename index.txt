@@ -1,0 +1,60 @@
+<!-- <header class="header">
+      <div class="logo_container">
+        <img class="image" src="assets/Logo Transparent.png" alt="" />
+        <img class="title" src="assets/Logo Title.png" alt="" />
+        <ol class="breadcrumb">
+          <li class="breadcrumb">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb">
+            <a href="index.html">Post</a>
+          </li>
+          <li class="breadcrumb">
+            <a href="index.html">Create</a>
+          </li>
+        </ol>
+      </div>
+    </header>
+
+    <div class="body_container">
+      <div class="title_container">
+        <img src="assets/Facebook_f_logo.svg" alt="" />
+        <h1>Create facebook post</h1>
+      </div>
+      <form action="#">
+        <div class="post_container">
+          <div class="post_title">
+            <input type="text" placeholder="Write your facebook post" />
+          </div>
+          <div class="post_desc">
+            <textarea
+              type="text"
+              placeholder="Write your description here"
+            ></textarea>
+          </div>
+          <div class="post_date">
+            <div class="datepicker">
+              <label for="appt">Select posting date:</label>
+              <input type="date" name="date" />
+            </div>
+          </div>
+          <div class="post_time">
+            <div class="timepicker">
+              <label for="appt">Select posting time:</label>
+              <input type="time" id="appt" name="appt" />
+            </div>
+          </div>
+          <div class="btn_container" role="group" aria-label="Basic example">
+            <div class="button_item">
+              <button type="button" class="btn preview">Preview</button>
+            </div>
+            <div class="button_item">
+              <button type="button" class="btn cancel">Cancel</button>
+            </div>
+            <div class="button_item">
+              <button type="button" class="btn save">Save</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div> -->

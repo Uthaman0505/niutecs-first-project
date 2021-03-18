@@ -4,75 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Niutects Facebook Blaster</title>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    <link
       rel="stylesheet"
-    /> -->
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header class="header">
-      <div class="logo_container">
-        <img class="image" src="assets/Logo Transparent.png" alt="" />
-        <img class="title" src="assets/Logo Title.png" alt="" />
-        <!-- <ol class="breadcrumb">
-          <li class="breadcrumb">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="breadcrumb">
-            <a href="index.html">Post</a>
-          </li>
-          <li class="breadcrumb">
-            <a href="index.html">Create</a>
-          </li>
-        </ol> -->
-      </div>
-    </header>
-
-    <div class="body_container">
-        <div class="title_container">
-            <img src="assets/Facebook_f_logo.svg" alt="" />
-            <h1>Create facebook post</h1>
+    <!-- Header -->
+    <div class="row header">
+      <div class="col-md-1">
+        <div class="image">
+          <img
+            class="img-responsive image-1"
+            src="assets/Logo Transparent.png"
+            alt="Responsive image"
+          />
         </div>
+      </div>
+      <div class="col-md-1">
+        <div class="image">
+          <img
+            class="img-responsive image-2"
+            src="assets/Logo Title.png"
+            alt="Responsive image"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------- -->
+
+    <div class="container">
+      <!-- Title Row -->
+      <div class="row text-justify">
+        <div class="col-md-6">
+          <img
+            class="img-responsive facebook-logo"
+            src="assets/Facebook_f_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="header_title text-capitalize">Create facebook post</h1>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------------------- -->
+   
+      <!-- Form -->
       <form action="#">
-        <div class="post_container">
-          <div class="post_title">
-            <input type="text" placeholder="Write your facebook post" />
+        <!-- Facebook post -->
+        <div class="row">
+          <div class="form-group col-xs-4 col-lg-offset-4">
+            <label for="post" class="text-capitalize form_label">write your facebook post here: </label>
+            <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder=".....">
           </div>
-          <div class="post_desc">
-            <textarea
-              type="text"
-              placeholder="Write your description here"
-            ></textarea>
+        </div>
+        <!-- Description  -->
+        <div class="row">
+          <div class="form-group col-xs-4 col-lg-offset-4">
+            <label for="post" class="text-capitalize form_label">write your description here: </label>
+            <textarea class="form-control text-capitalize" rows="3"></textarea>
           </div>
-          <div class="post_date">
-            <div class="datepicker">
-              <input type="date" name="date" />
-            </div>
-          </div>
-          <div class="post_time">
-            <div class="timepicker">
-              <label for="appt">Select posting time:</label>
-              <input type="time" id="appt" name="appt" />
-            </div>
-          </div>
-          <div class="btn_container" role="group" aria-label="Basic example">
-            <div class="button_item">
-              <button type="button" class="btn preview">Preview</button>
-            </div>
-            <div class="button_item">
-              <button type="button" class="btn cancel">Cancel</button>
-            </div>
-            <div class="button_item">
-              <button type="button" class="btn save">Save</button>
-            </div>
+        </div>
+        <!-- Datepicker  -->
+        <div class="row">
+          <div class="form-group col-xs-4 col-lg-offset-4">
+            <label for="post" class="text-capitalize form_label">select facebook posting date: </label>
+            <input type="date" class="form-control input-lg" name="date" />
           </div>
         </div>
       </form>
     </div>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="datedropper-jquery.js"></script>  -->
   </body>
 </html>
