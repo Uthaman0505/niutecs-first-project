@@ -15,34 +15,49 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="row header">
-      <div class="col-md-1">
-        <div class="image">
-          <img
-            class="img-responsive image-1"
-            src="assets/Logo Transparent.png"
-            alt="Responsive image"
-          />
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="navbar-brand">
+          <img src="assets/Logo Transparent.png" class="image-1" alt="" />
+        </a>
+        <a href="#" class="navbar-brand">
+          <img src="assets/Logo Title.png" class="image-2" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <!-- <header>
+      <div class="row header">
+        <div class="col-md-1">
+          <div class="image">
+            <img
+              class="img-responsive image-1"
+              src="assets/Logo Transparent.png"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="image">
+            <img
+              class="img-responsive image-2"
+              src="assets/Logo Title.png"
+              alt="Responsive image"
+            />
+          </div>
         </div>
       </div>
-      <div class="col-md-1">
-        <div class="image">
-          <img
-            class="img-responsive image-2"
-            src="assets/Logo Title.png"
-            alt="Responsive image"
-          />
-        </div>
-      </div>
-    </div>
+    </header> -->
+
     <!-- ----------------------------------------- -->
 
-    <div class="container">
+    <div class="container" style="border:1px solid #cecece;">
       <!-- Title Row -->
+
       <div class="row text-justify">
         <div class="col-md-6">
           <img
-            class="img-responsive facebook-logo"
+            class="img-responsive facebook-logo text-left"
             src="assets/Facebook_f_logo.svg"
             alt=""
           />
@@ -57,7 +72,7 @@
       <form action="#">
         <!-- Facebook post -->
         <div class="row">
-          <div class="form-group col-xs-4 col-lg-offset-4">
+          <div class="form-group col-xs-4 col-lg-offset-4"  style="padding-top: 17px;">
             <label for="post" class="text-capitalize form_label"
               >write your facebook post here:
             </label>
@@ -70,7 +85,7 @@
           </div>
         </div>
         <!-- Description  -->
-        <div class="row">
+        <div class="row description">
           <div class="form-group col-xs-4 col-lg-offset-4">
             <label for="description" class="text-capitalize form_label"
               >write your description here:

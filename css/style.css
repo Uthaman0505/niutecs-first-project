@@ -23,17 +23,27 @@
 .header {
   border-bottom: 2px solid #101010;
   background-image: linear-gradient(to right, white, DodgerBlue);
+  height: 80px;
 }
 
-.image {
-  padding: 2px;
+
+.navbar-brand img {
+ 
+  /* put value of image height as your need */
+  float: left;
+  margin-right: 5px;
 }
 
-.image-2 {
-  margin: 30px 0px 0 -20px;
-  padding-top: 10px;
-  margin-right: 50px;
+.image-1{
+    height: 60px;
 }
+
+.image-2{
+    height: 30px;
+    margin-top: 15px;
+    margin-left: -20px;
+}
+
 
 /* ----------------------------------------------------------------------------- */
 
@@ -62,7 +72,9 @@
   padding-top: 20px;
 }
 
-
+/* .description{
+    padding-top: ;
+} */
 
 /* ------------------------------------------------- */
 
@@ -73,13 +85,13 @@
     
   } */
 
-  .buttons{
-      display: flex;
-      justify-content: space-between;
-  }
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .button-1{
-    margin-right: 142px;
-  }
+.button-1 {
+  margin-right: 142px;
+}
 
 /* ------------------------------ */
