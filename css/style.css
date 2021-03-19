@@ -1,3 +1,31 @@
+/* Header CSS */
+
+.header {
+    border-bottom: 2px solid #101010;
+    background-image: linear-gradient(to right, white, DodgerBlue);
+    height: 80px;
+  }
+
+  .navbar-brand img {
+ 
+    /* put value of image height as your need */
+    float: left;
+    margin-right: 5px;
+  }
+
+  .image-1{
+    height: 60px;
+}
+
+.image-2{
+    height: 30px;
+    margin-top: 15px;
+    margin-left: -20px;
+}
+
+/* --------------------------------------------------------------------- */
+
+
 /* The sidebar menu */
 #tbcontainer{
     margin-left: 85px;

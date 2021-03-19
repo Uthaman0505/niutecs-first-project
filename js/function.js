@@ -18,14 +18,14 @@ function toggleSidebar() {
 
 //delete visible after checkbox selected
 
-function showHide()
+function showHide(event)
 {
-    if(document.getElementById('campaignChk').checked)
-    {
+    const isChecked = $(event.target).prop('checked');
+    
+    if (isChecked) {
         document.getElementById('delCampaignBtn').style.visibility = 'visible';
     }
-    else
-    {
+    else {
         document.getElementById('delCampaignBtn').style.visibility = 'hidden';
     }
 }
