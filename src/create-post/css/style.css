@@ -51,15 +51,17 @@
 
 .facebook-logo {
   width: 50px;
-  padding: 0px 0px 0px 0px;
-  margin: 10px 0px 0px 420px;
-  justify-content: center;
+  margin: 0px 0px 0px 350px; 
 }
 
 .header_title {
   margin: 20px 0px 0px -100px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+
+.header_post{
+  margin: 10px 0px 0px -168px;
 }
 
 /* ------------------------------------------------- */

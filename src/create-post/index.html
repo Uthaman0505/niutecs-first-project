@@ -26,55 +26,28 @@
       </nav>
     </header>
     <!-- ------------------------------------------------------------------------------ -->
-    
-          <div>
-              <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                      <li class="breadcrumb-item">
-                          <a href="previouspage.html">Home</a>
-                      </li>
-                      <li class="breadcrumb-item active" aria-current="page">
-                        <a href="../create-campaign/index.html">Campaign</a>
-                        
-                      </li>
-                      <li class="breadcrumb-item active" aria-current="page">
-                        Create Post
-                    </li>
-                  </ol>
-              </nav>
-          </div>
-      </div>
-  </div>
-    
-    <!-- <header>
-      <div class="row header">
-        <div class="col-md-1">
-          <div class="image">
-            <img
-              class="img-responsive image-1"
-              src="assets/Logo Transparent.png"
-              alt="Responsive image"
-            />
-          </div>
-        </div>
-        <div class="col-md-1">
-          <div class="image">
-            <img
-              class="img-responsive image-2"
-              src="assets/Logo Title.png"
-              alt="Responsive image"
-            />
-          </div>
-        </div>
-      </div>
-    </header> -->
+
+    <div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="previouspage.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="../create-campaign/index.html">Campaign</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Create Post
+          </li>
+        </ol>
+      </nav>
+    </div>
 
     <!-- ----------------------------------------- -->
 
-    <div class="container" style="border: 1px solid #cecece">
-      <!-- Title Row -->
-
-      <div class="row text-justify">
+    <!-- Title Row -->
+    <div class="container" style="margin-bottom: 15px">
+      <div class="row justify-content-center">
         <div class="col-md-6">
           <img
             class="img-responsive facebook-logo text-left"
@@ -83,11 +56,15 @@
           />
         </div>
         <div class="col-md-6">
-          <h1 class="header_title text-capitalize">Create facebook post</h1>
+          <h1 class="header_title header_post text-capitalize">
+            Create facebook post
+          </h1>
         </div>
       </div>
-      <!-- --------------------------------------------------------------------------- -->
+    </div>
+    <!-- --------------------------------------------------------------------------- -->
 
+    <div class="container" style="border: 1px solid #cecece">
       <!-- Form -->
       <form action="#">
         <!-- Facebook post -->
@@ -160,7 +137,7 @@
             </button>
           </div>
           <div>
-            <button type="button" class="btn btn-danger button-2">
+            <button type="button" class="btn btn-danger button-2" id="back">
               Cancel
             </button>
             <button
@@ -177,18 +154,26 @@
     </div>
     <script src="jquery/jquery-3.6.0.min.js"></script>
     <script>
+      const data = [];
       function showData() {
         $(document).on("click", "#submit", function () {
           var post = $("#post").val();
           var desc = $("#desc").val();
           var date = $("#date").val();
           var time = $("#time").val();
-          alert(post);
-          alert(desc);
-          alert(date);
-          alert(time);
+          data.push(post, desc, date, time);
+          alert(data);
+          // alert(desc);
+          // alert(date);
+          // alert(time);
         });
       }
+
+      // function cancelBtn(){
+      //   $(document).on('click', '#back', function () {
+      //     window.location('')
+      //   })
+      // }
     </script>
   </body>
 </html>

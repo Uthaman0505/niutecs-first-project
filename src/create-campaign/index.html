@@ -13,10 +13,16 @@
   </head>
   <body>
 
-    <div class="header">
-      <img src="img/Logo Transparent.png" class="logo" width=80px>
-      <img src="img/Logo Title.png" class="logo" width=160px>
-    </div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="navbar-brand">
+          <img src="../../assets/Logo Transparent.png" class="image-1" alt="" />
+        </a>
+        <a href="#" class="navbar-brand">
+          <img src="../../assets/Logo Title.png" class="image-2" alt="" />
+        </a>
+      </nav>
+    </header>
   
           <div>
               <nav aria-label="breadcrumb">
@@ -30,8 +36,7 @@
                   </ol>
               </nav>
           </div>
-      </div>
-  </div>
+   
 
     <!--<nav class="custom-header">
         <a class="navbar-brand" href="#" >
@@ -54,7 +59,7 @@
     </div>
     </form>
 
-  <button type="button" id="delPostBtn" class="btn btn-danger">Delete Post</button>
+  <button type="button" id="delPostBtn" style="visibility: hidden" class="btn btn-danger">Delete Post</button>
    <table class="table" id="myTable">
         <thead>
           <tr class="align-middle thead-dark">
@@ -124,14 +129,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/custom-js.js"></script>
     
-    <script>
-          $(function() {
-        $('#addPostBtn').click(add_post);
-        $('#delPostBtn').click(deleteRow);
-    })
-    </script>
-</div>
-</div>
+    
 
+<script>
+  $(function() {
+      $('#addPostBtn').click(add_post);
+      $('#delPostBtn').click(deleteRow);
+      $(document).on('click', '.postChk', showHide);
+  })
+  </script>
   </body>
 </html>

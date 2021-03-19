@@ -17,7 +17,7 @@ function toggle(source) {
     var cell5 = row.insertCell(4);
     var cell6 = row.insertCell(5);
   
-    cell1.innerHTML = "<input  class='postChk, align-middle' type=\"checkbox\">";
+    cell1.innerHTML = "<input  class='postChk' type=\"checkbox\">";
     cell2.innerHTML = "Random Post Title here";
     cell3.innerHTML = "Random Content here";
     cell4.innerHTML = "Random date here";
@@ -48,6 +48,18 @@ function myFunction() {
       }
     }
   }
+
+  function showHide(event)
+{
+    const isChecked = $(event.target).prop('checked');
+    
+    if (isChecked) {
+        document.getElementById('delPostBtn').style.visibility = 'visible';
+    }
+    else {
+        document.getElementById('delPostBtn').style.visibility = 'hidden';
+    }
+}
   
   const deleteRow = function(event) {
     const checks = $('.postChk:checked');
@@ -55,20 +67,23 @@ function myFunction() {
     $(checks).each(function() {
         $(this).parents('tr').remove();
       });
+
+      $(document).ready(function() {
+    
+        var $submit = $("#delPostBtn").hide(),
+            $cbs = $('input[name="selectpost"]').click(function() {
+                $submit.toggle( $cbs.is(":checked") );
+            });
+      });
+
   }
 
-  $(document).ready(function() {
+//   $(document).ready(function() {
     
-    var $submit = $("#delPostBtn").hide(),
-        $cbs = $('input[name="selectall"]').click(function() {
-            $submit.toggle( $cbs.is(":checked") );
-        });
-});
+//     var $submit = $("#delPostBtn").hide(),
+//         $cbs = $('input[name="selectall"]').click(function() {
+//             $submit.toggle( $cbs.is(":checked") );
+//         });
+// });
 
-$(document).ready(function() {
-    
-  var $submit = $("#delPostBtn").hide(),
-      $cbs = $('input[name="selectpost"]').click(function() {
-          $submit.toggle( $cbs.is(":checked") );
-      });
-});
+
