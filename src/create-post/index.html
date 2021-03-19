@@ -26,7 +26,8 @@
       </nav>
     </header>
     <!-- ------------------------------------------------------------------------------ -->
-
+    <!-- <div id="main"> -->
+    <!-- <div class="container"> -->
     <div>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -42,6 +43,8 @@
         </ol>
       </nav>
     </div>
+    <!-- </div> -->
+    <!-- </div> -->
 
     <!-- ----------------------------------------- -->
 
@@ -132,12 +135,22 @@
         <!-- Buttons -->
         <div class="row col-xs-4 col-lg-offset-4 buttons">
           <div>
-            <button type="button" class="btn btn-primary button-1">
+            <button
+              type="button"
+              class="btn btn-primary button-1"
+              data-toggle="modal"
+              data-target="#flipFlop"
+            >
               Preview
             </button>
           </div>
           <div>
-            <button type="button" class="btn btn-danger button-2" id="back">
+            <button
+              type="button"
+              class="btn btn-danger button-2"
+              onclick="redirect()"
+              id="back"
+            >
               Cancel
             </button>
             <button
@@ -152,7 +165,68 @@
         </div>
       </form>
     </div>
+
+    <!-- The modal -->
+    <div
+      class="modal fade"
+      id="flipFlop"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modalLabel">Facebook Post</h4>
+          </div>
+          <div class="modal-body">
+            <title>Facebook Post</title>
+            <small
+              >Title
+            </small>
+            <h3>Facebook Blaster</h3>
+            <div class="container">
+              <small>Description</small>
+              <h3>
+                Exiting posting on its way
+              </h3>
+              <span>
+                <small>Date of posting: 19/03/2021</small>
+              </span>
+            </br>
+              <span>
+                <small>Time of posting: 10:00am</small>
+              </span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------------------------------------------- -->
     <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
     <script>
       const data = [];
       function showData() {
@@ -169,11 +243,13 @@
         });
       }
 
-      // function cancelBtn(){
-      //   $(document).on('click', '#back', function () {
-      //     window.location('')
-      //   })
-      // }
+      const goBack = () => {
+        window.location.href = "../create-campaign/index.html";
+      };
+
+      function redirect() {
+        $(document).on("click", "#back", goBack);
+      }
     </script>
   </body>
 </html>
