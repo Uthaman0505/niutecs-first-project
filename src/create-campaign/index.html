@@ -1,0 +1,123 @@
+<!doctype html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/custom-css.css">
+
+    <title>Create/Edit Campaign Page</title>
+  </head>
+  <body>
+
+    <div class="header">
+      <img src="img/Logo Transparent.png" class="logo" width=80px>
+      <img src="img/Logo Title.png" class="logo" width=160px>
+    </div>
+
+
+    <!--<nav class="custom-header">
+        <a class="navbar-brand" href="#" >
+            <img src="img/Logo Transparent.png" height="60" alt="">
+            <img src="img/Logo Title.png" height="60" alt="">
+          </a>
+    </nav>-->
+
+
+<div class="container">
+  <h1>Create/Edit Campaign</h1>
+   <form>
+    <button type="button" class="btn btn-danger" id="float-right-btns">Delete Campaign</button>
+    <div class="form-group row">
+        <div class="col-xs-5">
+            <input class="form-control" id="ex1" type="text" placeholder="Campaign Name">
+            <button type="button" id="editCampaignNameBtn" class="btn btn-success">Edit</button>
+        </div>
+
+    </div>
+    </form>
+
+  <button type="button" id="delPostBtn" class="btn btn-danger">Delete Post</button>
+   <table class="table" id="myTable">
+        <thead>
+          <tr class="align-middle thead-dark">
+            <th scope="col"><input type="checkbox" id="selectall" onClick="toggle(this)" name="selectall" /></th>
+            <th scope="col">Post title</th>
+            <th scope="col">Date Created</th>
+            <th scope="col">Date Last Modified</th>
+            <th scope="col">Start Date of Posting</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  id="post-1" class="align-middle">
+            <th scope="row"><input type="checkbox" class="postChk" value="checkbox" name="selectpost"></th>
+            <td scope="col">Random post title here</td>
+            <td scope="col">12/03/2021</td>
+            <td scope="col">21/04/2021</td>
+            <td scope="col">12/03/2021</td>
+            <td scope="col"><a type="button" class="btn btn-primary" href="../create-post/index.html">Edit</a></td>
+          </tr>
+          <tr id="post-2" class="align-middle">
+            <th scope="row"><input type="checkbox" class="postChk" value="checkbox" name="selectpost"></th>
+            <td scope="col">Another random post title here</td>
+            <td scope="col">12/03/2021</td>
+            <td scope="col">21/04/2021</td>
+            <td scope="col">12/03/2021</td>
+            <td scope="col"><a type="button" class="btn btn-primary" href="../create-post/index.html">Edit</a></td>
+          </tr>
+          <tr id="post-1" class="align-middle">
+            <th scope="row"><input type="checkbox" class="postChk" value="checkbox" name="selectpost"></th>
+            <td scope="col">Another random post title here</td>
+            <td scope="col">12/03/2021</td>
+            <td scope="col">21/04/2021</td>
+            <td scope="col">12/03/2021</td>
+            <td scope="col"><a type="button" class="btn btn-primary" href="../create-post/index.html">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+<div>
+    <label for="startdate">Choose Starting Date:</label>
+    <input type="date" id="startdate" name="startdate">
+    
+    <label>Choose Frequency:</label>
+    <select id="freq" name="freq">
+      <option>Once a week</option>
+      <option>Twice a week</option>
+      <option>Thrice a week</option>
+      <option>Every Day</option>
+    </select> 
+
+    <br>
+    <br>
+</div>
+
+
+<button type="button" id="addPostBtn" class="btn btn-primary">Add Post</button>
+
+<div id="float-right-btns">
+    <button type="button" class="btn btn-primary">Cancel</button>
+    <button type="button" class="btn btn-primary">Save</button>
+</div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/custom-js.js"></script>
+    
+    <script>
+          $(function() {
+        $('#addPostBtn').click(add_post);
+        $('#delPostBtn').click(deleteRow);
+    })
+    </script>
+</div>
+</div>
+
+  </body>
+</html>

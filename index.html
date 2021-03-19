@@ -1,145 +1,136 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Niutects Facebook Blaster</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <nav class="navbar">
-        <a href="#" class="navbar-brand">
-          <img src="assets/Logo Transparent.png" class="image-1" alt="" />
-        </a>
-        <a href="#" class="navbar-brand">
-          <img src="assets/Logo Title.png" class="image-2" alt="" />
-        </a>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- <header>
-      <div class="row header">
-        <div class="col-md-1">
-          <div class="image">
-            <img
-              class="img-responsive image-1"
-              src="assets/Logo Transparent.png"
-              alt="Responsive image"
-            />
-          </div>
-        </div>
-        <div class="col-md-1">
-          <div class="image">
-            <img
-              class="img-responsive image-2"
-              src="assets/Logo Title.png"
-              alt="Responsive image"
-            />
-          </div>
-        </div>
-      </div>
-    </header> -->
+    <title>Learning</title>
 
-    <!-- ----------------------------------------- -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
 
-    <div class="container" style="border:1px solid #cecece;">
-      <!-- Title Row -->
+<!--   -----------------------Side bar-----------------------   -->
 
-      <div class="row text-justify">
-        <div class="col-md-6">
-          <img
-            class="img-responsive facebook-logo text-left"
-            src="assets/Facebook_f_logo.svg"
-            alt=""
-          />
-        </div>
-        <div class="col-md-6">
-          <h1 class="header_title text-capitalize">Create facebook post</h1>
-        </div>
-      </div>
-      <!-- --------------------------------------------------------------------------- -->
+<div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <a href="#">
+        <span>
+            <i class="material-icons">house</i>
+            <span class="icon-text">Home</span>
+        </span>
+    </a>
+    <a href="#">
+        <span>
+            <i class="material-icons">adjust</i>
+            <span class="icon-text">Services</span>
+        </span>
+    </a>
+    <a href="#">
+        <i class="material-icons">monetization_on</i>
+        <span class="icon-text"></span>
+        <span>Clients</span>
+    </a>
+    <a href="#">
+        <i class="material-icons">email</i>
+        <span class="icon-text"></span>Contact</a>
 
-      <!-- Form -->
-      <form action="#">
-        <!-- Facebook post -->
-        <div class="row">
-          <div class="form-group col-xs-4 col-lg-offset-4"  style="padding-top: 17px;">
-            <label for="post" class="text-capitalize form_label"
-              >write your facebook post here:
-            </label>
-            <input
-              type="email"
-              class="form-control input-lg"
-              id="exampleInputEmail1"
-              placeholder="....."
-            />
-          </div>
+</div>
+
+<!--   -----------------------Header-----------------------   -->
+
+<div id="main">
+    <div class="container">
+        <nav class="">
+            <h2>Campaign view</h2>
+        </nav>
+
+        <div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="previouspage.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Campaign view
+                    </li>
+                </ol>
+            </nav>
         </div>
-        <!-- Description  -->
-        <div class="row description">
-          <div class="form-group col-xs-4 col-lg-offset-4">
-            <label for="description" class="text-capitalize form_label"
-              >write your description here:
-            </label>
-            <textarea class="form-control text-capitalize" rows="3"></textarea>
-          </div>
-        </div>
-        <!-- Datepicker  -->
-        <div class="row">
-          <div class="form-group col-xs-4 col-lg-offset-4">
-            <label for="datepicker" class="text-capitalize form_label"
-              >choose facebook posting date:
-            </label>
-            <input type="date" class="form-control input-lg" name="date" />
-          </div>
-        </div>
-        <!-- Timepicker  -->
-        <div class="row">
-          <div class="form-group col-xs-4 col-lg-offset-4">
-            <label for="timepicker" class="text-capitalize form_label"
-              >set posting time:
-            </label>
-            <input type="time" class="form-control input-lg" name="time" />
-          </div>
-        </div>
-        <!-- Buttons -->
-        <div class="row col-xs-4 col-lg-offset-4 buttons">
-          <div>
-            <button
-              type="button"
-              class="btn btn-primary button-1"
-              style="background-color: #0081d5; font-size: 10px"
-            >
-              Preview
-            </button>
-          </div>
-          <div>
-            <button
-              type="button"
-              class="btn btn-primary button-2"
-              style="background-color: #ff0404; font-size: 10px"
-            >
-              Cancel
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary button-3"
-              style="background-color: #12d500; font-size: 10px"
-            >
-              Save
-            </button>
-          </div>
-        </div>
-      </form>
     </div>
-  </body>
+</div>
+
+<!--   -----------------------Table-----------------------   -->
+
+<div class="container" id="tbcontainer">
+    <div class="">
+
+        <p>
+            <input id="campaignChk" type="checkbox" onclick="showHide();" checked="checked" />
+            <label for="campaignChk">Show/Hide</label>
+            <a>
+                <span>
+                    <i id="delCampaignBtn" class="material-icons">delete</i>
+                </span>
+            </a>
+        </p>
+
+        <table class="table" id="CampaignTable">
+            <thead class="thead-dark">
+            <th scope="col">Checkbox</th>
+            <th scope="col">Descriptions</th>
+            <th scope="col">Date Created</th>
+            <th scope="col">Modified date</th>
+            <th scope="col">Edit</th>
+            </thead>
+            <tbody>
+            <tr id="campaign-1" class="align-middle">
+                <td scope="row"><input class="campaignChk" type="checkbox" value="checkbox"></td>
+                <td scope="col">Posting on fb about fight against drugs</td>
+                <td scope="col">25/5/2021</td>
+                <td scope="col">17/3/2021</td>
+                <td scope="col"><a class="btn btn-primary" href="src/create-campaign/index.html">Editable</a></td>
+            </tr>
+            <tr id="campaign-2" class="align-middle">
+                <td scope="row"><input class="campaignChk" type="checkbox" value="checkbox"></td>
+                <td scope="col">Posting on fb about game development update</td>
+                <td scope="col">22/5/2021</td>
+                <td scope="col">2/1/2021</td>
+                <td scope="col"><a class="btn btn-primary" href="src/create-campaign/index.html">Editable</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <button id="addCampaignBtn" type="button" class="btn btn-light" >insert row</button>
+<!--        <button id="delCampaignBtn" type="button" class="btn btn-light" >delete row</button>-->
+
+<!--        <a>-->
+<!--            <span>-->
+<!--                <i id="delCampaignBtn" class="material-icons">delete</i>-->
+<!--            </span>-->
+<!--        </a>-->
+
+    </div>
+</div>
+<script src="js/function.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script>
+    $(function() {
+        $('#addCampaignBtn').click(add_campaign);
+        $('#delCampaignBtn').click(deleteRow);
+    })
+</script>
+
+</body>
 </html>

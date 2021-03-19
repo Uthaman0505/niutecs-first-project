@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niutects Facebook Blaster</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="navbar-brand">
+          <img src="assets/Logo Transparent.png" class="image-1" alt="" />
+        </a>
+        <a href="#" class="navbar-brand">
+          <img src="assets/Logo Title.png" class="image-2" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <!-- <header>
+      <div class="row header">
+        <div class="col-md-1">
+          <div class="image">
+            <img
+              class="img-responsive image-1"
+              src="assets/Logo Transparent.png"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="image">
+            <img
+              class="img-responsive image-2"
+              src="assets/Logo Title.png"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <!-- ----------------------------------------- -->
+
+    <div class="container" style="border: 1px solid #cecece">
+      <!-- Title Row -->
+
+      <div class="row text-justify">
+        <div class="col-md-6">
+          <img
+            class="img-responsive facebook-logo text-left"
+            src="assets/Facebook_f_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="header_title text-capitalize">Create facebook post</h1>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------------------- -->
+
+      <!-- Form -->
+      <form action="#">
+        <!-- Facebook post -->
+        <div class="row">
+          <div
+            class="form-group col-xs-4 col-lg-offset-4"
+            style="padding-top: 17px"
+          >
+            <label for="post" class="text-capitalize form_label"
+              >write your facebook post here:
+            </label>
+            <input
+              type="text"
+              class="form-control input-lg"
+              id="post"
+              placeholder="....."
+              autocomplete="off"
+              name="post"
+            />
+          </div>
+        </div>
+        <!-- Description  -->
+        <div class="row description">
+          <div class="form-group col-xs-4 col-lg-offset-4">
+            <label for="description" class="text-capitalize form_label"
+              >write your description here:
+            </label>
+            <textarea
+              class="form-control text-capitalize"
+              rows="3"
+              name="description"
+              id="desc"
+            ></textarea>
+          </div>
+        </div>
+        <!-- Datepicker  -->
+        <div class="row">
+          <div class="form-group col-xs-4 col-lg-offset-4">
+            <label for="datepicker" class="text-capitalize form_label"
+              >choose facebook posting date:
+            </label>
+            <input
+              type="date"
+              class="form-control input-lg"
+              name="date"
+              id="date"
+              format="MM-dd-yyyy"
+            />
+          </div>
+        </div>
+        <!-- Timepicker  -->
+        <div class="row">
+          <div class="form-group col-xs-4 col-lg-offset-4">
+            <label for="timepicker" class="text-capitalize form_label"
+              >set posting time:
+            </label>
+            <input
+              type="time"
+              class="form-control input-lg"
+              name="time"
+              id="time"
+            />
+          </div>
+        </div>
+        <!-- Buttons -->
+        <div class="row col-xs-4 col-lg-offset-4 buttons">
+          <div>
+            <button
+              type="button"
+              class="btn btn-primary button-1"
+              style="background-color: #0081d5; font-size: 10px"
+            >
+              Preview
+            </button>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-primary button-2"
+              style="background-color: #ff0404; font-size: 10px"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary button-3"
+              style="background-color: #12d500; font-size: 10px"
+              onclick="showData()"
+              id="submit"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      function showData() {
+        $(document).on("click", "#submit", function () {
+          var post = $("#post").val();
+          var desc = $("#desc").val();
+          var date = $("#date").val();
+          var time = $("#time").val();
+          alert(post);
+          alert(desc);
+          alert(date);
+          alert(time);
+        });
+      }
+    </script>
+  </body>
+</html>
