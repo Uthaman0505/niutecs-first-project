@@ -5,7 +5,7 @@ var mini = true;
 function toggleSidebar() {
     if (mini) {
         /*console.log("opening sidebar");*/
-        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("mySidebar").style.width = "280px";
         document.getElementById("main").style.marginLeft = "250px";
         this.mini = false;
     } else {

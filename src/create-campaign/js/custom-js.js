@@ -68,13 +68,15 @@ function myFunction() {
         $(this).parents('tr').remove();
       });
 
-      $(document).ready(function() {
+      // $(document).ready(function() {
     
-        var $submit = $("#delPostBtn").hide(),
-            $cbs = $('input[name="selectpost"]').click(function() {
-                $submit.toggle( $cbs.is(":checked") );
-            });
-      });
+      //   var $submit = $("#delPostBtn").hide(),
+      //       $cbs = $('input[name="selectpost"]').click(function() {
+      //           $submit.toggle( $cbs.is(":checked") );
+      //       });
+      // });
+
+      document.getElementById('delPostBtn').style.visibility = 'hidden';
 
   }
 
